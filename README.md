@@ -198,10 +198,9 @@ According to google the fadeOut method animates the opacity of the matched eleme
 
 * **What do you think is going on with the following code at the beginning of the program? Note that the most important thing to do for answering this question is to be thoughtful and clear, not to be absolutely correct:**
 
-```js
+// js
 $(document).ready(function(){
     $("form").submit(function(event){
-''
 
 This code is wrapping the code in "document ready" so that the code will load the DOM (and all the elements) so that the code can function. Then the code is creating a .submit() event which is usually used to validate the form before submitting to the server. So this appears to be just code to initiate the program - loading the DOM and creating the submission event.   
 
