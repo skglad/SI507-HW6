@@ -202,9 +202,9 @@ According to google the fadeOut method animates the opacity of the matched eleme
 $(document).ready(function(){
     $("form").submit(function(event){
 
-This code is wrapping the code in "document ready" so that the code will load the DOM (and all the elements) so that the code can function. Then the code is creating a .submit() event which is usually used to validate the form before submitting to the server. So this appears to be just code to initiate the program - loading the DOM and creating the submission event.   
+This code is wrapping the code in "document ready" so that the code will load the DOM (and all the elements) so that the code can function. Then the code is creating a .submit() event which is usually used to validate the form before submitting to the server. So this appears to be code to initiate the program - loading the DOM and creating the submission event.   
 
-***Add some code to the `jquerylib_submit_example.html` file so that, if the input is valid and is specifically the text `hello`, rather than the visible output being `Nice!` in blue, the visible output should be `Hello to you too!`, also in blue, just like `Nice!` is.**
+**Add some code to the `jquerylib_submit_example.html` file so that, if the input is valid and is specifically the text `hello`, rather than the visible output being `Nice!` in blue, the visible output should be `Hello to you too!`, also in blue, just like `Nice!` is.**
 	* *HINT:* You'll have to make some changes to the conditional statement, and possibly look up some JavaScript conditional syntax. You'll also need to look carefully at what generates visible output right now.
 
-To add this to the code I added an additional "else if" statement on the conditional that the currentValue is equal to "hello" which returns "hello to you too!" rather than simply "nice!"
+To add this feature to the code I added an additional "else if" statement on the conditional to check if the currentValue is equal to "hello" and, if that is true, to return "hello to you too!" rather than "nice!". I also set this as style type "good" so that this would also print out as blue.
