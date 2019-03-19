@@ -164,15 +164,7 @@ to line 83 in order to place this button underneath the "wow" button.
 
 * **When you enter input that isn't valid, you see an error that is red. Why is the error in red? Why is the response for valid inputs blue?**
 
-The error message is in red and the valid message is in blue because of the style code:
-
-<style type="text/css">
-    .error{
-        color: red;
-    }
-    .good {
-        color: blue;
-    }
+The error message is in red and the valid message is in blue because of the style code found on lines 7-13
 found on lines 7-13.
 
 * **What is this line `var regex = /^[a-zA-Z]+$/;` helping with? And if you googled something to figure that out, what did you google, and what, briefly, did you learn? (If you didn't need to google, you can leave that out, but explain briefly what that line is helping the program do, anyway.)**
@@ -214,7 +206,7 @@ $(document).ready(function(){
 This code is wrapping the code in "document ready" so that the code will load the DOM (and all the elements) so that the code can function. Then the code is creating a .submit() event which is usually used to validate the form before submitting to the server. So this appears to be just code to initiate the program - loading the DOM and creating the submission event.   
 
 
-* **Add some code to the `jquerylib_submit_example.html` file so that, if the input is valid and is specifically the text `hello`, rather than the visible output being `Nice!` in blue, the visible output should be `Hello to you too!`, also in blue, just like `Nice!` is.**
+***Add some code to the `jquerylib_submit_example.html` file so that, if the input is valid and is specifically the text `hello`, rather than the visible output being `Nice!` in blue, the visible output should be `Hello to you too!`, also in blue, just like `Nice!` is.**
 	* *HINT:* You'll have to make some changes to the conditional statement, and possibly look up some JavaScript conditional syntax. You'll also need to look carefully at what generates visible output right now.
 
 	To add this to the code I added an additional "else if" statement on the conditional that the currentValue is equal to "hello" which returns "hello to you too!" rather than simply "nice!"
