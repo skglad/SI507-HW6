@@ -86,34 +86,35 @@ You need to have a script tag in order to get a program to run.
 
 The two methods that are similar to print:
 
-alert()
+alert() <br>
 console.log()
 
-alert() would be something to be displayed on the browser, but the console.log would only be displayed in the console of the web browser.
+alert() would be used  to display something on the browser, but the console.log would only display something in the console of the web browser.
 
 * **What code would have to comment out to get rid of the pop-up box when you load the page? (Related to the last question.) Do that in the code file, and then, add code so that a text box will appear that contains the current date and time! *HINT:* Look through the rest of the code first...**
 
-We would need to comment out "alert("hello")" on line 12 to get rid of the pop-up box when you load the page.
-To add the date and time to pop up, we add the code:
+To get rid of the pop-up box, it would be necessary to comment out "alert("hello")" on line 12.
+<br>
+To add the date and time to pop up, I added the code:
 
-alert(new Data())
+alert(new Date())
 
-below the commented out code on line 12, which is the data and time function.  
+below the commented out code on line 12.  
 
 
 * **How can you put your own name at the top where it currently says "A name"? Explain very briefly how to do so, and replace `A name` in the web page with your own name.**
 
-We replace "A name" in line 17 with our own name, so for me I replaced it with "Sara Gladchun"
+I replaced "A name" in line 17 with "Sara Gladchun"
 
 * **What does the word `document` represent in this code? Explain briefly.**
 
-'document' is part of the DOM, and represents the HTML file that we are within and allows javascript to manipulate that file.
+'document' is part of the DOM, and represents the HTML file that we are working within and allows javascript to manipulate that file.
 
 * **What is happening in line 12 (
 		`document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length`
 )? Explain, briefly (<= 2 sentences).**
 
-This code is a querySelector method that is counting the number of list items (with the <li> tag) and totaling it to display it as "The number of list items for this page".
+This code is a querySelector method that is counting the number of list items (with the <li> tag) and totaling them to display it as "The number of list items for this page".
 
 * **What color would the background of this page be <u>if there were no JavaScript in this page</u>?**
 
@@ -121,11 +122,11 @@ The background of the page would be white because there is no color assigned in 
 
 * **Why are there a couple of gray boxes on the screen with a different colored border? How could you edit this code to make them a different color? Explain briefly. Then edit the code to make those boxes some shade of blue, of your choosing.**
 
-There are gray boxes because the style of the <p> tag is assigned a background color of b3b3b3 on line 37. You could change the "#b3b3b3" to a different color. You could edit it in CSS and javascript. I changed the "#b3b3b3" code to "#4286f4" to change it to a shade of blue.
+There are gray boxes because the style of the <p> tag is assigned a background color of #b3b3b3 on line 37. You could change the "#b3b3b3" to a different color. You could edit it in CSS and javascript. I changed the "#b3b3b3" code to "#4286f4" to change it to a shade of blue.
 
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
 
-I added a function called copyFunction2 and invoked that function on the list item "McGill University", and set it to display "O Canada" when McGill University if highlighted. This function is very similar to the function copyFunction that was set for the "University of Michigan" so I was able to base my code on that code.
+I added a function called copyFunction2 and invoked that function on the list item "McGill University", and set the function to display "O Canada" when McGill University if highlighted. This function is very similar to the function copyFunction that was set for the "University of Michigan" so I was able to base my code on that code.
 
 * **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
 
@@ -169,7 +170,7 @@ found on lines 7-13.
 
 * **What is this line `var regex = /^[a-zA-Z]+$/;` helping with? And if you googled something to figure that out, what did you google, and what, briefly, did you learn? (If you didn't need to google, you can leave that out, but explain briefly what that line is helping the program do, anyway.)**
 
-The regular expression is helping to determine whether or not the submission is actually a word. This regex is checking to make sure that all the characters (more than 1) are actually letters and not other characters. They can be upper case or lower case but they must be letters (a-z or A-Z).
+The regular expression is helping to determine whether or not the submission is actually a word. This regex is checking to make sure that all the characters are actually letters and not other characters (more than 1 - so a blank entry won't be accepted either). They can be upper case or lower case but they must be letters (a-z or A-Z).
 
 * **What's different about the syntax of conditional statements in JavaScript, compared to Python?**
 
@@ -206,9 +207,9 @@ $(document).ready(function(){
 
 This code is wrapping the code in "document ready" so that the code will load the DOM (and all the elements) so that the code can function. Then the code is creating a .submit() event which is usually used to validate the form before submitting to the server. So this appears to be code to initiate the program - loading the DOM and creating the submission event.  
 
-Resource: https://stackoverflow.com/questions/12252378/capturing-a-form-submit-with-jquery-and-submit/12252576 
+Resource: https://stackoverflow.com/questions/12252378/capturing-a-form-submit-with-jquery-and-submit/12252576
 
 **Add some code to the `jquerylib_submit_example.html` file so that, if the input is valid and is specifically the text `hello`, rather than the visible output being `Nice!` in blue, the visible output should be `Hello to you too!`, also in blue, just like `Nice!` is.**
 	* *HINT:* You'll have to make some changes to the conditional statement, and possibly look up some JavaScript conditional syntax. You'll also need to look carefully at what generates visible output right now.
 
-To add this feature to the code I added an additional "else if" statement on the conditional to check if the currentValue is equal to "hello" and, if that is true, to return "hello to you too!" rather than "nice!". I also set this as style type "good" so that this would also print out as blue.
+To add this feature to the code I added an additional "else if" statement on the conditional to check if the currentValue is equal to "hello" and, if that is true, to return "hello to you too!" rather than "nice!". I also set this as style type "good" so that this would also print out as blue. This code can be found on lines 24-26. 
