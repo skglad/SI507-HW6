@@ -194,7 +194,9 @@ else:
 	code to be executed
 
 * **What do you think the `10000` refers to in the code `.fadeOut(10000)`?**
-According to google the fadeOut method animates the opacity of the matched elements, and the first parameter is duration (default is 400)- so I think that this 10000 refers to milliseconds of time for the element to fade out from the screen.
+The fadeOut method animates the opacity of the matched elements, and the first parameter is duration (default is 400)- so I think that this 10000 refers to milliseconds of time for the element to fade out from the screen.
+
+Resource: http://api.jquery.com/fadeout/
 
 * **What do you think is going on with the following code at the beginning of the program? Note that the most important thing to do for answering this question is to be thoughtful and clear, not to be absolutely correct:**
 
@@ -202,7 +204,9 @@ According to google the fadeOut method animates the opacity of the matched eleme
 $(document).ready(function(){
     $("form").submit(function(event){
 
-This code is wrapping the code in "document ready" so that the code will load the DOM (and all the elements) so that the code can function. Then the code is creating a .submit() event which is usually used to validate the form before submitting to the server. So this appears to be code to initiate the program - loading the DOM and creating the submission event.   
+This code is wrapping the code in "document ready" so that the code will load the DOM (and all the elements) so that the code can function. Then the code is creating a .submit() event which is usually used to validate the form before submitting to the server. So this appears to be code to initiate the program - loading the DOM and creating the submission event.  
+
+Resource: https://stackoverflow.com/questions/12252378/capturing-a-form-submit-with-jquery-and-submit/12252576 
 
 **Add some code to the `jquerylib_submit_example.html` file so that, if the input is valid and is specifically the text `hello`, rather than the visible output being `Nice!` in blue, the visible output should be `Hello to you too!`, also in blue, just like `Nice!` is.**
 	* *HINT:* You'll have to make some changes to the conditional statement, and possibly look up some JavaScript conditional syntax. You'll also need to look carefully at what generates visible output right now.
