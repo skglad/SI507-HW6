@@ -95,7 +95,7 @@ alert() would be used  to display something on the browser, but the console.log 
 
 To get rid of the pop-up box, it would be necessary to comment out "alert("hello")" on line 12.
 <br>
-To add the date and time to pop up, I added the code:
+To add the date and time to pop up, on line 13 I added the code:
 
 alert(new Date())
 
@@ -114,7 +114,7 @@ I replaced "A name" in line 17 with "Sara Gladchun"
 		`document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length`
 )? Explain, briefly (<= 2 sentences).**
 
-This code is a querySelector method that is counting the number of list items (with the <li> tag) and totaling them to display it as "The number of list items for this page".
+This code is a querySelector method that is counting the number of list items and totaling them to display it as "The number of list items for this page".
 
 * **What color would the background of this page be <u>if there were no JavaScript in this page</u>?**
 
@@ -122,7 +122,7 @@ The background of the page would be white because there is no color assigned in 
 
 * **Why are there a couple of gray boxes on the screen with a different colored border? How could you edit this code to make them a different color? Explain briefly. Then edit the code to make those boxes some shade of blue, of your choosing.**
 
-There are gray boxes because the style of the <p> tag is assigned a background color of #b3b3b3 on line 37. You could change the "#b3b3b3" to a different color. You could edit it in CSS and javascript. I changed the "#b3b3b3" code to "#4286f4" to change it to a shade of blue.
+There are gray boxes because the style of the paragraph tag is assigned a background color of #b3b3b3 on line 37. You could change the "#b3b3b3" to a different color. You could edit it in CSS and javascript. I changed the "#b3b3b3" code to "#4286f4" to change it to a shade of blue.
 
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
 
@@ -154,7 +154,7 @@ function handleClick2(){
 on lines 40-43
 
 and I also added the code:
-<button onclick=handleClick2() id="SE-button">Spring Equinox 2019</button>
+'<button onclick=handleClick2() id="SE-button">Spring Equinox 2019</button>'
 
 to line 83 in order to place this button underneath the "wow" button.
 
@@ -180,19 +180,19 @@ Looking at this example, some of the main differences that I see is that the "if
 
 The syntax of JavaScript conditional statement appears to be:
 
-if(condition){
-	code to be executed
-}
-else{
-	code to be executed
+if(condition){<br>
+	code to be executed<br>
+}<br>
+else{<br>
+	code to be executed<br>
 }
 
 The syntax of Python conditional statement is:
 
-if (condition):
-	code to be executed
-else:
-	code to be executed
+if (condition):<br>
+	code to be executed<br>
+else:<br>
+	code to be executed<br>
 
 * **What do you think the `10000` refers to in the code `.fadeOut(10000)`?**
 The fadeOut method animates the opacity of the matched elements, and the first parameter is duration (default is 400)- so I think that this 10000 refers to milliseconds of time for the element to fade out from the screen.
@@ -212,4 +212,4 @@ Resource: https://stackoverflow.com/questions/12252378/capturing-a-form-submit-w
 **Add some code to the `jquerylib_submit_example.html` file so that, if the input is valid and is specifically the text `hello`, rather than the visible output being `Nice!` in blue, the visible output should be `Hello to you too!`, also in blue, just like `Nice!` is.**
 	* *HINT:* You'll have to make some changes to the conditional statement, and possibly look up some JavaScript conditional syntax. You'll also need to look carefully at what generates visible output right now.
 
-To add this feature to the code I added an additional "else if" statement on the conditional to check if the currentValue is equal to "hello" and, if that is true, to return "hello to you too!" rather than "nice!". I also set this as style type "good" so that this would also print out as blue. This code can be found on lines 24-26. 
+To add this feature to the code I added an additional "else if" statement on the conditional to check if the currentValue is equal to "hello" and, if that is true, to return "hello to you too!" rather than "nice!". I also set this as style type "good" so that this would also print out as blue. This code can be found on lines 24-26.
