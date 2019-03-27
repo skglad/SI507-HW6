@@ -154,7 +154,7 @@ function handleClick2(){
 on lines 40-43
 
 and I also added the code:
-// <button onclick=handleClick2() id="SE-button">Spring Equinox 2019</button>
+ button onclick=handleClick2() id="SE-button">Spring Equinox 2019</button>
 
 to line 83 in order to place this button underneath the "wow" button.
 
