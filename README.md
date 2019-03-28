@@ -126,7 +126,7 @@ There are gray boxes because the style of the paragraph tag is assigned a backgr
 
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
 
-I added a function called copyFunction2 and invoked that function on the list item "McGill University", and set the function to display "O Canada" when McGill University if highlighted. This function is very similar to the function copyFunction that was set for the "University of Michigan" so I was able to base my code on that code.
+I added a function called copyFunction2 on lines 32-34 and invoked that function on the list item "McGill University" on line 74, and set the function to display "O Canada" when McGill University if highlighted. This function is very similar to the function copyFunction that was set for the "University of Michigan" so I was able to base my code on that code.
 
 * **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
 
