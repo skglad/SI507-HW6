@@ -195,7 +195,7 @@ if (condition):<br>
 else:<br>
 	code to be executed<br>
 
-* **What do you think the `10000` refers to in the code `.fadeOut(10000)`?**
+* **What do you think the `10000` refers to in the code `.fadeOut(10000)`?**<br>
 The fadeOut method animates the opacity of the matched elements, and the first parameter is duration (default is 400)- so I think that this 10000 refers to milliseconds of time for the element to fade out from the screen.
 
 Resource: http://api.jquery.com/fadeout/
