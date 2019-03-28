@@ -154,8 +154,10 @@ function handleClick2(){
 on lines 40-43
 
 and I also added the code:
- button onclick=handleClick2() id="SE-button">Spring Equinox 2019</button>
+ ```js
+ <button onclick=handleClick2() id="SE-button">Spring Equinox 2019</button>
 
+ ```
 
 to line 83 in order to place this button underneath the "wow" button.
 
@@ -166,8 +168,7 @@ to line 83 in order to place this button underneath the "wow" button.
 
 * **When you enter input that isn't valid, you see an error that is red. Why is the error in red? Why is the response for valid inputs blue?**
 
-The error message is in red and the valid message is in blue because of the style code found on lines 7-13
-found on lines 7-13.
+The error message is in red and the valid message is in blue because of the style code found on lines 7-13.
 
 * **What is this line `var regex = /^[a-zA-Z]+$/;` helping with? And if you googled something to figure that out, what did you google, and what, briefly, did you learn? (If you didn't need to google, you can leave that out, but explain briefly what that line is helping the program do, anyway.)**
 
